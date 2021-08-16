@@ -7,12 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body class="m-5">
+<body class="m-5 w-50 h-50 mx-auto">
     <h1>
         Paw's Step
     </h1>
-    <main>
-        <form class="row g-3 needs-validation" novalidate>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum labore explicabo, corrupti a cum ipsam similique eaque, ex sit dolores expedita dolorum necessitatibus dolor adipisci dicta eos maxime iste!
+    </p>
+    <main class="">
+        <form class="row g-3 needs-validation  " novalidate>
+            <!-- first address -->
+
             <div class="col-md-4">
               <label for="validationCustom01" class="form-label">First name</label>
               <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
@@ -20,6 +25,8 @@
                 Looks good!
               </div>
             </div>
+            <!-- last name -->
+
             <div class="col-md-4">
               <label for="validationCustom02" class="form-label">Last name</label>
               <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
@@ -27,10 +34,17 @@
                 Looks good!
               </div>
             </div>
+            <!-- address -->
+            
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Address</span>
+                <input type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+            <!-- Username -->
             <div class="col-md-4">
               <label for="validationCustomUsername" class="form-label">Username</label>
               <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <span class="input-group-text" id="inputGroupPrepend">Email</span>
                 <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
                   Please choose a username.
@@ -77,7 +91,7 @@
             <div class="col-12">
               <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
-          </form>
+        </form>
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
